@@ -27,6 +27,7 @@ class PicturesController < ApplicationController
 
     def show
 
+        puts "--------------------bleh--------------------"
 
         @pictures = [
 
@@ -54,5 +55,15 @@ class PicturesController < ApplicationController
 
     end 
 
+    def new
+        
+        puts "--------------------hello--------------------"
 
+    end
+
+    def create
+
+        render :text => "Saving a picture. Name: #{params[:name]}, Year: #{params[:year]}, Artist: #{params[:artist]}, URL: #{params[:url]}"
+        
+    end
 end 
