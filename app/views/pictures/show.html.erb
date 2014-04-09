@@ -1,5 +1,6 @@
 <h1>Photo</h1>
 <%= link_to "Back to pictures", pictures_url %>
+<%= link_to "Edit", picture_edit_url(@picture[:id]) %>
     <h2><%= @picture[:name] %>, <%= @picture[:year] %></h2>
     <h2>by <%= @picture[:artist] %></h2>
     <img src="<%= @picture[:url] %>" >
