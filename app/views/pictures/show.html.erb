@@ -1,7 +1,7 @@
 <h1>Photo</h1>
 <%= link_to "Back to pictures", pictures_url %>
 <%= link_to "Edit", picture_edit_url(@picture[:id]) %>
+<%= link_to "Delete", picture_delete_url(@picture[:id]), :confirm => "Are you sure you want to delete?", :method => :delete %>
     <h2><%= @picture[:name] %>, <%= @picture[:year] %></h2>
     <h2>by <%= @picture[:artist] %></h2>
     <img src="<%= @picture[:url] %>" >
-
